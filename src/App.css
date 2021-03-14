@@ -1,33 +1,52 @@
 .App {
-  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-header {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 60vh;
+  width: 100%;
 }
-
+.logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+.title p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +54,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+/*Segunda parte da página*/
+.container-footer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 40vh;
+  width: 100%;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about a button {
+  background-color: #39AEDA;
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+.about a button:hover {
+  background-color: #0194E9;
+}
+.about a button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.description h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
 }
