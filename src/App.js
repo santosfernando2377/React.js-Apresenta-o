@@ -1,5 +1,10 @@
 import './App.css';
 import logo from './logo.svg';
+import nodejs from '../src/img/nodejs.svg';
+import typescript from '../src/img/dactilografado.svg';
+import swift from '../src/img/rapido.svg';
+import sass from '../src/img/sass.svg';
+
 
 function App() {
   return (
@@ -15,10 +20,16 @@ function App() {
       </div>
       <div className="container-footer">
         <div className="about">
-          <a href="https://pt-br.reactjs.org/" target="_blank"><button>Saiba mais</button></a>
+          <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer"><button>Quero Saber Mais</button></a>
         </div>
         <div className="description">
-          <h3>Novas Tecnologias:</h3>
+          <h3>Outras Tecnologias:</h3>
+          <div className="tecnology">
+            <img src={nodejs} width="45px" height="45px" alt="logo nodejs"/>
+            <img src={typescript} width="45px" height="45px" alt="logo typescript"/>
+            <img src={swift} width="45px" height="45px" alt="logo swift"/>
+            <img src={sass} width="45px" height="45px" alt="logo sass"/>
+          </div>
         </div>
       </div>
     </div>
