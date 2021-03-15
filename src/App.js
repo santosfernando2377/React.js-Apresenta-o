@@ -8,16 +8,19 @@ import sass from '../src/img/sass.svg';
 function App() {
   return (
     <div className="App">
-      <div className="container-header">
-        <div className="logo">
-          <img src={logo} width="390px" height="390px" alt="logo"/>
+      <header>
+        <div className="container-header">
+          <div className="logo">
+            <img src={logo} width="390px" height="390px" alt="logo"/>
+          </div>
+          <div className="title">
+            <h1>Bem vindo ao React</h1>
+            <p>Dê os seus primeiros passos na tecnologia mais utilizada do mercado</p>
+            <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer"><button>React.Js</button></a>
+          </div>
         </div>
-        <div className="title">
-          <h1>Bem vindo ao React</h1>
-          <p>Dê os seus primeiros passos na tecnologia mais utilizada do mercado</p>
-          <a href="https://pt-br.reactjs.org/" target="_blank" rel="noreferrer"><button>React.Js</button></a>
-        </div>
-      </div>
+      </header>
+      <footer>
       <div className="container-footer">
         <div className="about">
           <p>Clique no botão abaixo e vá para o próximo nível   🚀</p>
@@ -35,6 +38,7 @@ function App() {
           </div>
         </div>
       </div>
+      </footer>
     </div>
   );
 }
