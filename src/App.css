@@ -38,9 +38,25 @@
 .title p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   text-shadow: 1px 1px 3px black;
+}
+.title a button {
+  background-color: #0194E9;
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.title a button:focus {
+  outline: none;
+  box-shadow: none;
 }
 @media (prefers-reduced-motion: no-preference) {
   .logo {
@@ -57,7 +73,7 @@
 }
 /*Segunda parte da página*/
 .container-footer {
-  background-color: white;
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: auto auto;
   height: 40vh;
@@ -74,7 +90,7 @@
 padding-right: 50px;
 }
 .about a button {
-  background-color: #39AEDA;
+  background-color: #0194E9;
   border: none;
   border-radius: 8px;
   height: 50px;
@@ -82,15 +98,19 @@ padding-right: 50px;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
-}
-.about a button:hover {
-  background-color: #0194E9;
 }
 .about a button:focus {
   outline: none;
   box-shadow: none;
+}
+.about p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  text-shadow: 1px 1px 1px grey;
 }
 .description {
   display: flex;
@@ -101,10 +121,17 @@ padding-right: 50px;
 }
 .description h3 {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   color: black;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px grey;
 }
 .tecnology img {
-  padding-right: 15px;
+  padding-right: 20px;
+  max-width: 100%;
+  transition: all 0.3s;
+}
+.tecnology img:hover {
+  transform: scale(1.2);
 }
